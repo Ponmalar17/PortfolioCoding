@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container" >
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>JAVA PROGRAMMER</p>
+            <h1>Hi, I'M <span>PONMALAR</span> <br>with a great passion towards programming language</h1>
+        </div>
+   </div> 
+</div>
+   <!-- -------------About--------------------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-c0l-2">
+                <h1 class="sub-title">About</h1><br>
+                <p>Hello! I'm PONMALAR.G and I am a passionate programmer.I am recently pursuving 3rd year in BCA at shir krishnaswamy college for women.I am eager to contribute myself to innovative projects.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active"  onclick="opentab('education')">Education</p>
+                    <p class="tab-links"  onclick="opentab('internship')">Internship</p>
+                    <p class="tab-links"  onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active" id="education">
+                    <ul>
+                        <li><span>HSC</span><br>Vivekananda Matric. Hr. Sec. School<br> 90.6%</li>
+                        <li><span>SSLC</span><br>Vivekananda Matric. Hr. Sec. School<br>95.4%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>01-05-2024 to 14-05-2024</span><br>Wish Tree consultancy pvt. ltd.<br><br></li>
+                        <li><span>10-07-2024 to 10-08-2024</span><br>JAVA PROGRAMMER<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>WEB DEVELOPMENT</span><br><br></li>
+                        <li><span>JAVA PROGRAMMER</span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<!-- --------------------Experience------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>        
+                <h2>Web Designing internship</h2>
+                <p>Learned about basic html and css styling to create a responsive web pages.</p>
+            </div>
+            <div>
+                <h2>Excel and Interest verification Internship</h2>
+                <p>learned basic information about the tally and to record the basic information in excel and check the details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------Contact-------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1><br>
+                <p>contact@example.com</p>
+                <p>9123456789</p>
+            </div><br>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="email" name="email" placeholder="email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <a href="girl.jpeg" download class="btn btn2">Download CV</a><br>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active");
+    }
+
+
+   </script>
+</body>
+</html>
